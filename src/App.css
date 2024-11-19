@@ -1,7 +1,31 @@
 .App {
   text-align: center;
+  
+
 }
 
+body{
+  background-color: black;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #4CAF50; /* A bold green shade */
+  text-align: center;
+  margin: 0.5em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.sub-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #555555; /* Muted gray for contrast */
+  text-align: center;
+  margin: 0.3em 0;
+  letter-spacing: 1.5px; /* Slight letter spacing */
+  font-style: italic;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +59,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  text-align: left;
+}
+
+.bot-message {
+  background-color: #2a2a2a;
+  color: white;
+  align-self: flex-start;
+  text-align: left;
+  
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
