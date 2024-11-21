@@ -127,3 +127,10 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.loading-message {
+  text-align: center;
+  font-style: italic;
+  color: #007bff;
+  margin: 10px 0;
+}
